@@ -25,3 +25,5 @@ $ ./nuttx
 login: admin
 password: Administrator
 ```
+Got any trouble? Check the official NuttX quickstart guide:
+http://nuttx.incubator.apache.org/docs/latest/quickstart/index.html
