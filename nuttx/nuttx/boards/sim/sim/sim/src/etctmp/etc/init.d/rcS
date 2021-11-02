@@ -1,0 +1,3 @@
+mkrd -m 2 -s 512 1024
+mkfatfs /dev/ram2
+mount -t vfat /dev/ram2 "/tmp"
