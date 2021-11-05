@@ -8,7 +8,7 @@
 	http://nuttx.incubator.apache.org/docs/latest/contributing/coding_style.html
 	https://github.com/robbie-cao/nuttx/blob/master/include/sys/types.h
 	
-	TODO: Ask Risadolas how can we choose the types correctly
+	TODO: Ask Lourenço how can we choose the types correctly
 */
 
 #include <xtcshared.h>

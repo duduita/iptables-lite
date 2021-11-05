@@ -11,8 +11,8 @@
 	http://nuttx.incubator.apache.org/docs/latest/contributing/coding_style.html
 	https://github.com/robbie-cao/nuttx/blob/master/include/sys/types.h
 	
-	TODO: Ask Risadolas how can we choose the types correctly
-	TODO: Ask Risadolas why libiptc functions are defined instead of being called directly
+	TODO: Ask Lourenço how can we choose the types correctly
+	TODO: Ask Lourenço why libiptc functions are defined instead of being called directly
 */
 
 typedef unsigned char __u8;
