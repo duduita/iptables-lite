@@ -13,6 +13,29 @@
 
 #include <xtcshared.h>
 #include "linux_list.h"
+#include "libip4tc.c"
+
+/* Convenience structures */
+struct chain_head;
+struct rule_head;
+
+struct counter_map
+{
+	enum {
+		COUNTER_MAP_NOMAP,
+		COUNTER_MAP_NORMAL_MAP,
+		COUNTER_MAP_ZEROED,
+		COUNTER_MAP_SET
+	} maptype;
+	unsigned int mappos;
+};
+
+enum iptcc_rule_type {
+	IPTCC_R_STANDARD,		/* standard target (ACCEPT, ...) */
+	IPTCC_R_MODULE,			/* extension module (SNAT, ...) */
+	IPTCC_R_FALLTHROUGH,		/* fallthrough rule */
+	IPTCC_R_JUMP,			/* jump to other chain */
+};
 
 struct rule_head
 {

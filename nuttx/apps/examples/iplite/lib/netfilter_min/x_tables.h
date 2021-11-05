@@ -10,6 +10,7 @@
 	
 	TODO: Ask Lourenço how can we choose the types correctly
 */
+#define XT_TABLE_MAXNAMELEN 32
 
 typedef unsigned long long __u64;
 

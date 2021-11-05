@@ -1,4 +1,5 @@
 #include <nuttx/include/net/if.h>
+#include <nuttx/include/netinet/in.h>
 #include <lib/netfilter_min/x_tables.h>
 
 /*
@@ -17,6 +18,16 @@
 
 typedef unsigned char __u8;
 typedef unsigned short __u16;
+
+enum nf_inet_hooks {
+	NF_INET_PRE_ROUTING,
+	NF_INET_LOCAL_IN,
+	NF_INET_FORWARD,
+	NF_INET_LOCAL_OUT,
+	NF_INET_POST_ROUTING,
+	NF_INET_NUMHOOKS,
+	NF_INET_INGRESS = NF_INET_NUMHOOKS,
+};
 
 /* Yes, Virginia, you have to zero the padding. */
 struct ipt_ip {
@@ -58,4 +69,38 @@ struct ipt_entry {
 
 	/* The matches (if any), then the target. */
 	unsigned char elems[0];
+};
+
+/* The argument to IPT_SO_GET_INFO */
+struct ipt_getinfo {
+	/* Which table: caller fills this in. */
+	char name[XT_TABLE_MAXNAMELEN];
+
+	/* Kernel fills these in. */
+	/* Which hook entry points are valid: bitmask */
+	unsigned int valid_hooks;
+
+	/* Hook entry points: one per netfilter hook. */
+	unsigned int hook_entry[NF_INET_NUMHOOKS];
+
+	/* Underflow points. */
+	unsigned int underflow[NF_INET_NUMHOOKS];
+
+	/* Number of entries */
+	unsigned int num_entries;
+
+	/* Size of entries. */
+	unsigned int size;
+};
+
+/* The argument to IPT_SO_GET_ENTRIES. */
+struct ipt_get_entries {
+	/* Which table: user fills this in. */
+	char name[XT_TABLE_MAXNAMELEN];
+
+	/* User fills this in: total entry size. */
+	unsigned int size;
+
+	/* The entries. */
+	struct ipt_entry entrytable[0];
 };

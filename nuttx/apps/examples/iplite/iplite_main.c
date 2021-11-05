@@ -49,7 +49,7 @@ static int insert_entry(const xt_chainlabel chain,
 }
 
 /****************************************************************************
- * hello_main
+ * iplite_main
  ****************************************************************************/
 
 int main(int argc, FAR char *argv[])
