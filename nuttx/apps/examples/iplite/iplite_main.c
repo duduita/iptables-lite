@@ -43,7 +43,7 @@ static int insert_entry(const xt_chainlabel chain,
 						int verbose,
 						struct xtc_handle *handle) // incompleto
 {
-	printf("Hello World!");
+	printf("insert_entry executed\n");
 
 	return 0;
 }
@@ -71,7 +71,7 @@ int main(int argc, FAR char *argv[])
 	int res = insert_entry(chain, fw, rulenum, nsaddrs, saddrs, smasks,
 				ndaddrs, daddrs, dmasks, verbose, handle);
 
-	printf("insert_entry executed -> res = %d\n", res);
+	printf("res = %d\n", res);
 
 	return 0;
 }

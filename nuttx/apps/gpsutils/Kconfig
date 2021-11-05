@@ -6,5 +6,5 @@
 #
 
 menu "GPS Utilities"
-source "/home/duduita/iptables_lite/nuttx/apps/gpsutils/minmea/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/gpsutils/minmea/Kconfig"
 endmenu # GPS Utilities

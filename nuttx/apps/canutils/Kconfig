@@ -6,11 +6,11 @@
 #
 
 menu "CAN Utilities"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/candump/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/canlib/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/cansend/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/libcanard/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/libcanutils/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/libobd2/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/canutils/slcan/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/candump/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/canlib/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/cansend/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/libcanard/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/libcanutils/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/libobd2/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/canutils/slcan/Kconfig"
 endmenu # CAN Utilities

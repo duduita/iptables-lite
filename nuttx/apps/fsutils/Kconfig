@@ -6,11 +6,11 @@
 #
 
 menu "File System Utilities"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/flash_eraseall/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/inifile/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/inih/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/ipcfg/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/mkfatfs/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/mksmartfs/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/fsutils/passwd/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/flash_eraseall/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/inifile/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/inih/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/ipcfg/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/mkfatfs/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/mksmartfs/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/fsutils/passwd/Kconfig"
 endmenu # File System Utilities

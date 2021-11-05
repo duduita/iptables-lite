@@ -6,5 +6,5 @@
 #
 
 menu "Industrial Applications"
-source "/home/duduita/iptables_lite/nuttx/apps/industry/abnt_codi/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/industry/abnt_codi/Kconfig"
 endmenu # Industrial Applications

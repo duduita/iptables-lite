@@ -6,6 +6,6 @@
 #
 
 menu "libuv async i/o Library"
-source "/home/duduita/iptables_lite/nuttx/apps/system/libuv/libuv/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/system/libuv/tests/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/system/libuv/libuv/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/system/libuv/tests/Kconfig"
 endmenu # libuv async i/o Library

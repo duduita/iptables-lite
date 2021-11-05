@@ -6,9 +6,9 @@
 #
 
 menu "Wireless Libraries and NSH Add-Ons"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/bluetooth/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/gs2200m/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/ieee802154/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/iwpan/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/wapi/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/bluetooth/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/gs2200m/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/ieee802154/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/iwpan/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/wapi/Kconfig"
 endmenu # Wireless Libraries and NSH Add-Ons

@@ -6,6 +6,6 @@
 #
 
 menu "Bluetooth applications"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/bluetooth/btsak/Kconfig"
-source "/home/duduita/iptables_lite/nuttx/apps/wireless/bluetooth/nimble/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/bluetooth/btsak/Kconfig"
+source "/home/rtsouza/Documents/TG/nuttx-stable/apps/wireless/bluetooth/nimble/Kconfig"
 endmenu # Bluetooth applications
