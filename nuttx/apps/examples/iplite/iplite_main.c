@@ -24,7 +24,7 @@
 
 #include <nuttx/config.h>
 #include <stdio.h>
-#include <iplite.h>
+#include "iplite.h"
 #include "xshared.h"
 
 /****************************************************************************
