@@ -24,10 +24,29 @@
 
 #include <nuttx/config.h>
 #include <stdio.h>
+#include <iplite.h>
+#include "xshared.h"
 
 /****************************************************************************
  * Public Functions
  ****************************************************************************/
+
+static int insert_entry(const xt_chainlabel chain,
+						struct ipt_entry *fw,	   // incompleto
+						unsigned int rulenum,
+						unsigned int nsaddrs,
+						const struct in_addr saddrs[],
+						const struct in_addr smasks[],
+						unsigned int ndaddrs,
+						const struct in_addr daddrs[],
+						const struct in_addr dmasks[],
+						int verbose,
+						struct xtc_handle *handle) // incompleto
+{
+	printf("Hello World!");
+
+	return 0;
+}
 
 /****************************************************************************
  * hello_main
@@ -35,6 +54,6 @@
 
 int main(int argc, FAR char *argv[])
 {
-  printf("Hello, World!!\n");
-  return 0;
+	printf("Hello, World!!\n");
+	return 0;
 }
