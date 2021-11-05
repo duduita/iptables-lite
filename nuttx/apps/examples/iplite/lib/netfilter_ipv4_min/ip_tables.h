@@ -1,3 +1,6 @@
+#ifndef _IPTABLES_H
+#define _IPTABLES_H
+
 #include <nuttx/include/net/if.h>
 #include <nuttx/include/netinet/in.h>
 #include <lib/netfilter_min/x_tables.h>
@@ -104,3 +107,5 @@ struct ipt_get_entries {
 	/* The entries. */
 	struct ipt_entry entrytable[0];
 };
+
+#endif /* _IPTABLES_H */

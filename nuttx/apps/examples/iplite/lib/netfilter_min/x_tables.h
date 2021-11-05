@@ -1,3 +1,8 @@
+#ifndef _X_TABLES_H
+#define _X_TABLES_H
+
+#define XT_TABLE_MAXNAMELEN 32
+
 /*
 	DON'T USE THE TYPE DEFINITIONS BELOW!
 	We need to choose the right data types.
@@ -10,10 +15,11 @@
 	
 	TODO: Ask Lourenço how can we choose the types correctly
 */
-#define XT_TABLE_MAXNAMELEN 32
 
 typedef unsigned long long __u64;
 
 struct xt_counters {
 	__u64 pcnt, bcnt;			/* Packet and byte counters */
 };
+
+#endif /* _X_TABLES_H */
