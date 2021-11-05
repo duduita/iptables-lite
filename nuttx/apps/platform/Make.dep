@@ -1,0 +1,2 @@
+dummy.home.duduita.iptables_project.iptables-lite.nuttx.apps.platform.o: \
+ board/dummy.c /usr/include/stdc-predef.h

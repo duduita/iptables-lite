@@ -1,0 +1,1 @@
+{ "hello", 100, 65536, hello_main },
