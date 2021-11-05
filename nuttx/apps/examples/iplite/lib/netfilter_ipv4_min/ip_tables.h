@@ -1,9 +1,9 @@
 #ifndef _IPTABLES_H
 #define _IPTABLES_H
 
-#include <nuttx/include/net/if.h>
-#include <nuttx/include/netinet/in.h>
-#include <lib/netfilter_min/x_tables.h>
+#include "../../nuttx/include/net/if.h"
+#include "../../nuttx/include/netinet/in.h"
+#include "../netfilter_min/x_tables.h"
 
 /*
 	DON'T USE THE TYPE DEFINITIONS BELOW!

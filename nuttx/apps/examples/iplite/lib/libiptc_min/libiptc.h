@@ -1,6 +1,6 @@
 #ifndef _LIBIPTC_H
 #define _LIBIPTC_H
 
-#include <libiptc_min/xtcshared.h>
+#include "xtcshared.h"
 
 #endif /* _LIBIPTC_H */
