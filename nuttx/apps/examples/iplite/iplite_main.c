@@ -54,6 +54,24 @@ static int insert_entry(const xt_chainlabel chain,
 
 int main(int argc, FAR char *argv[])
 {
-	printf("Hello, World!!\n");
+	printf("Hello, iplite!!\n");
+
+	xt_chainlabel chain = "blau";
+	struct ipt_entry *fw = NULL;
+	unsigned int rulenum = 0;
+	unsigned int nsaddrs = 0;
+	struct in_addr saddrs[] = {};
+	struct in_addr smasks[] = {};
+	unsigned int ndaddrs = 0;
+	struct in_addr daddrs[] = {};
+	struct in_addr dmasks[] = {};
+	int verbose = 0;
+	struct xtc_handle *handle = NULL;
+
+	int res = insert_entry(chain, fw, rulenum, nsaddrs, saddrs, smasks,
+				ndaddrs, daddrs, dmasks, verbose, handle);
+
+	printf("insert_entry executed -> res = %d\n", res);
+
 	return 0;
 }
